@@ -4,7 +4,7 @@
   "main": "index.js",
   "repository": "git@github.com:cookiecord/example.git",
   "author": "RONTheCookie <me@ronthecookie.me>",
-  "license": "GPL-3",
+  "license": "GPL-3.0",
   "dependencies": {
     "@types/dotenv": "^6.1.1",
     "@types/node": "^12.7.12",
