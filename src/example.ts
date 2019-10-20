@@ -1,7 +1,7 @@
 import { command, Module, listener, default as CookiecordClient } from "cookiecord";
 import { Message, GuildMember, User } from "discord.js";
 
-export default class PunishmentModule extends Module {
+export default class ExampleModule extends Module {
 	constructor(client: CookiecordClient) {
 		super(client);
 	}
