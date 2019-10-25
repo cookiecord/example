@@ -1,5 +1,6 @@
-import { command, Module, listener, default as CookiecordClient } from "cookiecord";
+import { command, Module, listener, default as CookiecordClient, getUserPermission, getMemberPermission } from "cookiecord";
 import { Message, GuildMember, User } from "discord.js";
+import { Permission } from "cookiecord";
 
 export default class ExampleModule extends Module {
 	constructor(client: CookiecordClient) {
@@ -19,5 +20,15 @@ export default class ExampleModule extends Module {
 	@listener({ event: "message" })
 	onTest(msg: Message) {
 		console.log("onTest", msg.content);
+	}
+
+	@command({description: "pong"})
+	ping(msg: Message) {
+		msg.reply("Pong. :ping_pong:");
+	}
+	@command({permission: Permission.GUILD_MOD, description: "Checking if user is mod or higher"})
+	modcheck(msg: Message) {
+		if (!msg.member) return;
+		msg.reply(`permission = ${getMemberPermission(this.client, msg.member)}`);
 	}
 }
