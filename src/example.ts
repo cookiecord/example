@@ -31,4 +31,8 @@ export default class ExampleModule extends Module {
 		if (!msg.member) return;
 		msg.reply(`permission = ${getMemberPermission(this.client, msg.member)}`);
 	}
+	@command({description: "one big string for all of the args", single: true})
+	single(msg: Message, str: string) {
+		msg.reply("You said " + str);
+	}
 }
