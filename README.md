@@ -1,2 +1,2 @@
 # example
-An example of a bot that uses Cookiecord.
+The example has now been merged with the [main repo](https://github.com/cookiecord/cookiecord).
