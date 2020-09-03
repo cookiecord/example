@@ -1,2 +1,5 @@
+# Archived
+This example has now been archived here and merged with the [main repo](https://github.com/cookiecord/cookiecord).
+
 # example
-The example has now been merged with the [main repo](https://github.com/cookiecord/cookiecord).
+An example of a bot that uses Cookiecord.
